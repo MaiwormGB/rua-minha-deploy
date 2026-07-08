@@ -1,0 +1,302 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+@keyframes Deslizar {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+body{
+
+    width: 100vw;
+    max-width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    background-color: #dac0c0;
+
+
+}
+
+.main{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header{
+
+    margin-top: 30px;
+    background-color: #794747;
+    height: 200px;
+    width: 900px;
+    padding: 10px;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nomes{
+
+    display: flex;
+    flex-direction: column;
+    font-size: 18pt;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nomes h1{
+
+    background: linear-gradient(to bottom, 
+    #fcfcf4, 
+    #fcfcf4, 
+    #e8e8d2, 
+    #ddddc1 
+    );
+    padding: 2px;
+    border-radius: 5px;
+
+}
+
+.nomes img{
+
+
+    border: 4px solid ;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, 
+    #fcfcf4, 
+    #fcfcf4, 
+    #e8e8d2, 
+    #ddddc1 
+  );
+
+}
+
+.botoes{
+
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+
+}
+
+button{
+
+    font-size: 15pt;
+    padding: 5px;
+    border: none;
+    border-bottom: 5px solid #804242 ;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, 
+    #fcfcf4, 
+    #fcfcf4, 
+    #e8e8d2, 
+    #ddddc1 );
+    min-width: 200px;
+    height: 80px;
+    min-height: 40px;
+    transition: 0.2s;
+
+}
+
+button:hover{
+
+    font-size: 18pt;
+    height: 90px;
+    width: 210px;
+
+}
+
+.info{
+
+    display: flex;
+    flex-direction: column;
+    width: 920px;
+    height: 800px;
+    background: linear-gradient(to bottom, 
+    #fcfcf4, 
+    #fcfcf4, 
+    #e8e8d2, 
+    #ddddc1 );
+    gap: 15px;
+
+}
+
+.info_header{
+
+    background-color: #422626;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ddddc1;
+    font-size: 15pt;
+
+}
+
+.info_pai{
+
+    height: 250px;
+    border-bottom: 10px solid #422626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.info_crianca{
+
+    height: 450px;
+    border-bottom: 10px solid #422626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+}
+
+h3{
+
+    font-size: 18pt;
+
+}
+
+p{
+
+    font-size: 14pt;
+
+}
+
+input{
+
+    font-size: 12pt;
+    padding: 5px;
+    border: none;
+    border-bottom: #794747 solid 2px;
+    background-color: transparent;
+
+}
+
+.footer{
+
+    height: 150px;
+    background-color: #422626;
+    width: 900px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 0px 0px 20px 20px;
+
+}
+
+#borrar{
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(
+    #0a0907d1,
+    #1a1612d9,
+    #40372ec0);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    
+
+}
+
+.confirmacao{
+
+    background-color: #c27f7f;
+    width: 600px;
+    height: 300px;
+    padding: 20px;
+    border: 20px double #794747 ;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.confirmacao .botoes{
+
+    height: 100px;
+
+}
+
+.confirmacao input{
+
+    width: 300px;
+    font-size: 15pt;
+    text-align: center;
+
+}
+
+.fundo_grid{
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+.linha{
+
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    height: 25%;
+
+}
+
+.esteira{
+
+    display: flex;
+    animation: Deslizar 120s linear infinite;
+
+}
+
+#linha2 .esteira{
+
+    flex-direction: row-reverse;
+    animation-direction: reverse;
+
+}
+
+.fundo_grid img{
+
+    width: 200px;
+    height: 200px;
+
+}

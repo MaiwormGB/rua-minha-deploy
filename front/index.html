@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Rua minha</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="../front/acervo/icones/Portão ícone .png">
+
+</head>
+
+<body>
+
+  <div id="intro">
+
+    <div id="filtro">
+
+       <div id="instrucao">
+        <h2>
+          precione qualquer tecla (ou toque na tela) e começe a diversão
+
+        </h2>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="main">
+
+    <div class="titulo">
+
+      <img src="acervo/backgrounds/banner_personagens.png" draggable="false" alt="titulo">
+
+    </div>
+
+    <div class="usuario">
+
+      <div class="conta_atual" onclick="paginaUsuario()">
+
+        <div class="foto_perfil">
+
+          <img src="../front/acervo/icones/quadrado-do-usuario.png">
+
+        </div>
+        <p id="nome">[ENTRAR]</p>
+
+      </div>
+
+    </div>
+
+    <div class="break1"></div>
+
+    <div class="info">
+
+      <p id="historinha">
+        Existe um lugar onde todos são muito felizes, um lugar onde você pode ser você mesmo sem medo, um lugar seguro.<br>
+        Esse lugar é uma ruazinha mágica com moradores muito gentis, cheia de oportunidades e sorrisos.<br>
+        Este portão lhe dará acesso a essa rua. Você gostaria de o atravessar?
+      </p>
+
+    </div>
+    
+
+    <div class="break1"></div>
+
+    <div class="nav">
+
+      <div class="buttons">
+
+        <div class="container">
+
+          <div id="entrar" onclick="cadastro()" onmouseenter="valbtn = 1; botaoIn()" onmouseleave="botaoOut()" class="botao">
+
+            <img src="acervo/icones/Botão ícone .png" alt="">
+            
+            <p id="entrarTexto" class="textoBotao">Entrar</p>
+            
+          </div>
+
+          <div id="novidades" onclick="novidades()" onmouseenter="valbtn = 4; botaoIn()" onmouseleave="botaoOut()" class="botao">
+
+            <img src="acervo/icones/Manu.png" alt="">
+            <p id="novidadesTexto" class="textoBotao">Novidades</p>
+            
+          </div>
+
+        </div>
+
+        <div class="container">
+
+          <div id="tarefa" class="botao" onmouseenter="valbtn = 2; botaoIn()" onmouseleave="botaoOut()">
+
+            <img src="acervo/icones/Lápis ícone .png" alt="">
+            
+            <p id="tarefaTexto" class="textoBotao">Tarefas</p>
+
+          </div>
+
+          <div id="comentario" onclick="comentario()" onmouseenter="valbtn = 5; botaoIn()" onmouseleave="botaoOut()" class="botao">
+
+            <img src="acervo/icones/Balão ícone .png" alt="">
+            <p id="comentariosTexto" class="textoBotao">Comentarios</p>
+            
+          </div>
+          
+        </div>   
+        
+        <div class="container">
+
+          <div id="vizinhanca" class="botao" onclick="vizinha()"  onmouseenter="valbtn = 3; botaoIn()" onmouseleave="botaoOut()">
+
+            <img src="acervo/icones/Portão ícone .png" alt="">
+            
+            <p id="ruaTexto" class="textoBotao">Ruazinha</p>
+
+          </div>
+
+          <div id="sobre" onclick="sobre()" onmouseenter="valbtn = 6; botaoIn()" onmouseleave="botaoOut()" class="botao">
+
+            <img src="acervo/icones/Estrela ícone .png" alt="">
+            <p id="sobreTexto" class="textoBotao">Sobre Nós</p>
+            
+          </div>
+
+        </div> 
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+ <div class="fundo_grid">
+
+        <div class="linha" id="linha1">
+
+             <div class="esteira">
+
+                <img src="acervo/assets/lua.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/bolo.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/lupa.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/aquarela.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/Pirulito.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/Mapa.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/livro.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/doces.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/pinceis.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/binoculos.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/Giz.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/brilhos.png" class="imagem-grid" alt="">
+
+                <img src="acervo/assets/pinceis.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/doces.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/livro.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/brilhos.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/lua.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/binoculos.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/Mapa.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/Pirulito.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/aquarela.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/Giz.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/bolo.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/lupa.png" class="imagem-grid" alt="">
+
+            </div>
+
+            
+        </div>
+
+        <div class="linha" id="linha2">
+
+            
+            <div class="esteira">
+
+                <img src="acervo/assets/pinceis.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/doces.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/livro.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/brilhos.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/lua.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/binoculos.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/Mapa.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/Pirulito.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/aquarela.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/Giz.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/bolo.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/lupa.png" class="imagem-grid" alt="">
+
+                <img src="acervo/assets/Giz.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/Mapa.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/aquarela.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/livro.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/lupa.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/pinceis.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/doces.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/Pirulito.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/brilhos.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/bolo.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/binoculos.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/lua.png" class="imagem-grid" alt="">
+
+
+            </div>
+
+        </div>
+
+        <div class="linha" id="linha3">
+
+            
+            <div class="esteira">
+
+                <img src="acervo/assets/Giz.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/Mapa.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/aquarela.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/livro.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/lupa.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/pinceis.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/doces.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/Pirulito.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/brilhos.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/bolo.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/binoculos.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/lua.png" class="imagem-grid" alt="">
+
+                <img src="acervo/assets/livro.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/bolo.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/lupa.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/aquarela.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/Pirulito.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/Mapa.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/lua.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/doces.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/pinceis.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/binoculos.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/Giz.png" class="imagem-grid" alt="">
+                <img src="acervo/assets/brilhos.png" class="imagem-grid" alt="">
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+  <script src="scripts/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+@keyframes Deslizar {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+body{
+
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: hidden;
+    background-image: url(../acervo/backgrounds/filtro_ruazinha.png),radial-gradient(
+        #1f366f,
+        #3d5ba6,
+        #82a0eb
+    );
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+}
+
+.main{
+
+    height: 850px;
+    width: 1300px;
+    border-radius: 15px;
+    background-image: url(../acervo/backgrounds/Ruazinha\ sem\ casas\ .png);
+    background-size: cover;
+    position: relative;
+
+}
+
+.header{
+
+    height: 150px;
+    width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.portao{
+
+    background-color: antiquewhite;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70px;
+    position: absolute;
+
+}
+
+.titulo{
+
+    background-color: antiquewhite;
+    width: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+.header h1{
+
+    font-size: 40pt;
+    letter-spacing: 10px;
+
+}
+
+.voltar{
+
+    background-color: rgb(161, 229, 130);
+    padding: 2px 15px 2px 15px;
+    font-size: 15pt;
+    border-radius: 10px;
+    z-index: 9999;
+    display: none;
+
+
+}
+
+.container{
+
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+
+}
+
+.casa{
+
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 0.3s ease;
+
+}
+
+#casa1:hover{
+
+    filter: drop-shadow(0 0 8px #d92df0)
+            drop-shadow(0 0 15px #d92df0);
+
+}
+
+#casa2:hover{
+
+    filter: drop-shadow(0 0 8px #64e241)
+            drop-shadow(0 0 15px #64e241);
+
+}
+
+#casa3:hover{
+
+    filter: drop-shadow(0 0 8px #e2d241)
+            drop-shadow(0 0 15px #e2d241);
+
+}
+
+#casa4:hover{
+
+    filter: drop-shadow(0 0 8px #e24141)
+            drop-shadow(0 0 15px #e24141);
+
+}
+
+#casa5:hover{
+
+    filter: drop-shadow(0 0 8px #41dde2)
+            drop-shadow(0 0 15px #41dde2);
+
+}
+
+.linhas{
+
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 100px 20px 100px;
+
+}
+
+#linhas1{
+
+    justify-content: center;
+
+}
+
+#linhas3{
+
+    padding: 20px 350px 20px 320px;
+
+}
+
+.fundo_grid{
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+.linha{
+
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    height: 25%;
+
+}
+
+.esteira{
+
+    display: flex;
+    animation: Deslizar 120s linear infinite;
+
+}
+
+#linha2 .esteira{
+
+    flex-direction: row-reverse;
+    animation-direction: reverse;
+
+}
+
+.fundo_grid img{
+
+    width: 200px;
+    height: 200px;
+
+}

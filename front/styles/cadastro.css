@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../acervo/backgrounds/cadastro_background.jpeg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3b3f3b;
+}
+
+h2{
+
+    text-align: center;
+    
+
+}
+
+.container{
+
+    background-color: rgba(250, 235, 215, 0.829);
+    width: 50%;
+    height: 60%;
+    border-radius: 20px;
+    display: flex;
+    padding: 20px;
+    border: 5px solid #327929;
+
+}
+
+.left{
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+input{
+
+    font-size: 13pt;
+    border: solid 2px #528e57;
+    border-radius: 10px;
+    background-color: #528e57ab;
+    padding: 5px;
+    color: #243d21;
+
+}
+
+input:focus{
+
+    border: #63d154;
+
+}
+
+input::placeholder{
+
+    color: #2f572f;
+
+}
+
+#select-check{
+
+    font-size: 15pt;
+    background-color: #327929;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 30px;
+    color: aliceblue;
+    gap: 10px;
+
+}
+
+.linha{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+input[type="checkbox"]{
+
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background-color: #aaeda8;
+    border: none;
+    cursor: pointer;
+
+}
+
+input[type="checkbox"]:hover{
+
+    background-color: #87d577;
+    border: 2px solid #aaeda8;
+
+}
+
+input[type="checkbox"]:focus {
+    outline: 2px solid #4CAF50;
+    outline-offset: 2px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #4CAF50;   
+    border-color: #4CAF50;
+}
+
+
+input[type="checkbox"]:checked::after {             
+    position: absolute;
+    color: rgb(78, 222, 85);
+    font-size: 16px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+select{
+
+    background-color: #47944b;
+    color: aliceblue;
+    font-size: 13pt;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 4px solid #85ea78;
+    appearance: none;
+
+}
+
+#acessibilidade{
+
+    background-color: #5ed154;
+
+}
+
+.topLeft{
+
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+
+}
+
+.bottomLeft{
+
+    width: 100%;
+    height: 20%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.bottomLeft button{
+
+    font-size: 20pt;
+    padding: 15px;
+    border: none;
+    background-color: #4a9447;
+    color: aliceblue;
+    border-radius: 15px;
+    border-bottom: 4px solid #82ea78 ;
+    
+
+}
+
+p{
+
+    margin-top: 10px;
+    font-size: 13pt;
+    color: #5d5a5a;
+}
+
+.right{
+
+    width: 50%;
+    height: 100%;
+    
+
+}
+
+.hl{
+
+    color: aliceblue;
+    background-color: #327929;
+    padding: 5px;
+    font-size: 15pt;
+    border-radius: 10px;
+
+}
+
+.topRight{
+
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+.bottomRight{
+
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+#cadastro{
+
+    display: none;
+
+}
+
+#login{
+
+    display: flex;
+
+}
+
+#login .topLeft{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+#login .topLeft button{
+
+    font-size: 20pt;
+    padding: 15px;
+    border: none;
+    background-color: #4a9447;
+    color: aliceblue;
+    border-radius: 15px;
+    border-bottom: 4px solid #82ea78 ;
+
+}
+
+a{
+
+    color: #2c7423;
+    background-color: #31be1e;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+
+a:hover{
+
+    cursor: pointer;
+
+}
+
+.player{
+
+    height: 60px;
+    width: 75%;
+    background-color: #243d21;
+    display: flex;
+    align-items: center;
+    border-radius: 0 30px 30px 0;
+    position: relative;
+
+}
+
+.playBtn{
+
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 0;
+    z-index: 9999;
+
+}
+
+.player input{
+
+    -webkit-appearance: none;
+    appearance: none;
+    width: 75%;
+    margin-left: 40px;
+    padding-left: 25px;
+    padding-right: 5px;
+    border: solid 2px #528e57;
+    border-radius: 10px;
+    background-color: #528e57ab;
+    color: #243d21;
+
+}
+
+audio{
+
+    display: none;
+
+}
+
+input::-webkit-slider-runnable-track{
+
+    background-color: #60935b;
+    border-radius: 30px;
+
+}
+
+input::-webkit-slider-thumb{
+
+    background-color: #243d21;
+
+}

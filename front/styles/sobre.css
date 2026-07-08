@@ -1,0 +1,179 @@
+@keyframes Deslizar {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+body{
+
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top,
+    #190f25,
+    #321e49,
+    #613b8d
+    );
+
+}
+
+.main{
+
+    width: 700px;
+    min-width: 500px;
+    height: 90%;
+    background-color: antiquewhite;
+    border-radius: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+h1{
+
+    color: #865bb8;
+    padding: 5px;
+    border-bottom:  solid;
+    border-radius: 10px;
+    font-size: 30pt;
+
+}
+
+h2{
+
+    font-size: 20pt;
+    color: #110a17;
+    
+}
+
+#quem{
+
+    background-color: #bb3b3b;
+    padding: 0px 10px 5px 10px;
+    border-bottom: 5px solid #6e2525;
+    
+}
+
+#missao{
+
+    background-color: #bb7b3b;
+    padding: 0px 10px 5px 10px;
+    border-bottom: 5px solid #744d25;
+
+}
+
+#metodos{
+
+    background-color: #acbb3b;
+    padding: 0px 10px 5px 10px;
+    border-bottom: 5px solid #7a852d;
+
+}
+
+p{
+
+    font-size: 15pt;
+    text-align: justify;
+    border-bottom: 2px dotted;
+    padding-bottom: 10px;
+    color: #1f1627;
+
+}
+
+a{
+
+    text-decoration: none;
+    font-size: 18pt;
+    background-color: #639122;
+    padding: 5px;
+    border-radius: 20px;
+    color: #ffe7e7;
+    border: 2px solid;
+
+}
+
+a:hover{
+
+    background-color: #78ab30;
+
+}
+
+.equipe{
+
+    background-color: #493361;
+    padding: 1px 2px;
+    color: aliceblue;
+
+}
+
+.left{
+
+    height: 100%;
+
+}
+
+.fundo_grid{
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+.linha{
+
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    height: 25%;
+
+}
+
+.esteira{
+
+    display: flex;
+    animation: Deslizar 120s linear infinite;
+
+}
+
+#linha2 .esteira{
+
+    flex-direction: row-reverse;
+    animation-direction: reverse;
+
+}
+
+.fundo_grid img{
+
+    width: 200px;
+    height: 200px;
+
+}

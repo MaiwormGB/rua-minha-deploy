@@ -1,0 +1,353 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+:root{
+
+    --cor_principal: #53baff;
+    --cor_secundaria: #e4f0ff;
+    --background1: #3787ef;
+    --background2: #73a4dd;
+    --background3: #a9c5ef;
+
+}
+
+body{
+
+    width: 100vw;
+    height: 100vh;
+
+
+}
+
+.personagems{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-image: url(../acervo/backgrounds/Atividade\ passeio\ sem\ fundo\ .png), linear-gradient(to top,
+    var(--background1),
+    var(--background2),
+    var(--background3));
+    background-size: cover;
+
+}
+
+.header{
+
+    width: 100%;
+    height: 20%;
+
+
+}
+
+.break{
+
+    height: 5px;
+    width: 100%;
+    background-color: var(--cor_secundaria);
+    border-radius: 10px;
+
+}
+
+.main{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+
+}
+
+.texto{
+
+    height: 80%;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+
+}
+
+h1{
+
+    font-size: 40pt;
+    background-color: var(--cor_secundaria);
+    padding: 1px 20px 1px 20px;
+    color: var(--cor_principal);
+
+}
+
+.texto p{
+
+    font-size: 17pt;
+    color: var(--cor_secundaria);
+
+}
+
+.botoes{
+
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.botoes button{
+
+    height: 100%;
+    font-size: 17pt;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: var(--cor_secundaria);
+    color: var(--cor_principal);
+    font-weight: bolder;
+    border: 5px solid var(--cor_secundaria);
+
+}
+
+.botoes button:hover{
+
+    background-color: var(--cor_principal);
+    color: var(--cor_secundaria);
+    border: 5px dotted var(--cor_secundaria);
+
+}
+
+.personagem{
+
+    width: 500px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.icone_canto{
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+
+}
+
+.atividade{
+
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-image: url(../acervo/backgrounds/Atividade\ passeio\ sem\ fundo\ .png), linear-gradient(to top,
+    var(--background1),
+    var(--background2),
+    var(--background3));
+    background-size: cover;
+
+}
+
+.titulo{
+
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    justify-content: center;
+    position: sticky;
+    gap: 20px;
+
+}
+
+.titulo button{
+
+    font-size: 15pt;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid var(--cor_principal);
+    border-top: 2px solid var(--cor_principal);
+    outline: none;
+    background-color: var(--cor_secundaria);
+    color: var(--cor_principal);
+    font-weight: bolder;
+    border-radius: 10px;
+
+}
+
+.titulo button:hover{
+
+    background-color: var(--cor_principal);
+    color: var(--cor_secundaria);
+    border-bottom: 2px solid var(--cor_secundaria);
+    border-top: 2px solid var(--cor_secundaria);
+
+}
+
+.lista{
+
+    width: 700px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    padding-top: 50px;
+    overflow-y: auto;
+    position: relative;
+    padding-bottom: 50px;
+    border-radius: 20px;
+
+}
+
+.lista::-webkit-scrollbar{
+
+    display: none;
+
+}
+
+.lista h1{
+
+    font-size: 32pt;
+
+}
+
+.atv{
+
+    width: 100%;
+    height: 300px;
+    min-height: 300px;
+    background-color: var(--cor_principal);
+    border-bottom: 5px solid var(--cor_secundaria);
+    border-radius: 20px;
+    background-image: url(../acervo/backgrounds/Atividade\ passeio\ sem\ fundo\ .png), linear-gradient(to top,
+    var(--background1),
+    var(--background2),
+    var(--background3));
+    background-size: cover;
+    
+
+}
+
+.atv h2{
+
+    background-color: var(--cor_principal);
+    color: var(--cor_secundaria);
+    padding: 5px 20px;
+    border-radius: 20px;
+
+}
+
+#resumo{
+
+    padding: 15px;
+    color: var(--cor_secundaria);
+    font-size: 17pt;
+    width: 100%;
+    height: 140px;
+
+}
+
+.atv .header{
+
+    height: 300px;
+    background-size: contain;
+    background-clip: border-box;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    position: absolute;
+
+}
+
+.tags{
+
+    height: 50px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+
+}
+
+.tag{
+
+    padding: 5px;
+    font-size: 14pt;
+    background-color: var(--cor_secundaria);
+    border-radius: 10px;
+
+}
+
+.player{
+
+    height: 60px;
+    width: 60%;
+    background-color: var(--cor_principal);
+    display: flex;
+    align-items: center;
+    border-radius: 0 30px 30px 0;
+    position: relative;
+    border: 2px solid var(--background1);
+
+}
+
+.playBtn{
+
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.player input{
+
+    -webkit-appearance: none;
+    appearance: none;
+    width: 70%;
+    margin-left: 40px;
+    padding-left: 105px;
+    padding-right: 5px;
+    border: solid 2px var(--background1);
+    border-radius: 10px;
+    background-color: var(--cor_secundaria);
+
+}
+
+audio{
+
+    display: none;
+
+}
+
+input::-webkit-slider-runnable-track{
+
+    background-color: var(--cor_secundaria);
+    border-radius: 30px;
+
+}
+
+input::-webkit-slider-thumb{
+
+    background-color: #243d21;
+
+}

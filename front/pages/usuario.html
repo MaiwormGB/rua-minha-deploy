@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rua minha</title>
+    <link rel="icon" href="../acervo/icones/Botão ícone .png">
+    <link rel="stylesheet" href="../styles/usuario.css">
+</head>
+<body>
+    
+    <div class="main">
+
+        <div class="header">
+
+            <div class="nomes">
+
+
+                <img src="../acervo/icones/quadrado-do-usuario.png" alt="" width="100px">
+                <h1 id="nome">OLÀ: </h1>
+
+
+            </div>
+            
+        </div>
+
+        <div class="info">
+
+            <div class="info_header">
+
+                <h2>Informações</h2>
+
+            </div>
+
+            <div class="info_pai">
+
+                <h3>Informações do responsavel</h3>
+
+                <p id="usuario">Nome do responsavel:</p>
+                <input type="text" id="novoUsuario" placeholder="Novo Usuário">
+
+                <p id="email">Email:</p>
+                <input type="email" id="novoEmail" placeholder="Novo Email">
+
+                <p id="cpf">CPF:</p>
+                <input type="text" id="novoCpf" placeholder="Novo CPF">
+
+            </div>
+
+            <div class="info_crianca">
+
+                <h3>Informações da criança</h3>
+
+                <p id="crianca">Nome da criança:</p>
+                <input type="text" id="novaCrianca" placeholder="Criança">
+                
+                <p id="idade">Idade:</p>
+                <input type="number" id="novaIdade" placeholder="Idade">
+
+                <p id="estado">Estado:</p>
+                <input type="text" id="novoEstado" placeholder="Estado">
+
+                <p id="cor">Cor favorita:</p>
+                <input type="text" id="novaCor" placeholder="Cor favorita">
+
+                <p id="comida">Comida favorita:</p>
+                <input type="text" id="novaComida" placeholder="Comida favorita">
+
+                <p id="generoLit">Genero literario favorito:</p>
+                <input type="text" id="novoGeneroLit" placeholder="Genero literario favorito">
+
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+
+            <div class="botoes">
+
+                <button onclick ="voltar()">Voltar</button>
+                <button onclick="salvar()">Salvar</button>
+                <button onclick="entrarDel()">Apagar</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="borrar">
+
+        <div class="confirmacao">
+
+            <h2>Tem certeza que deseja excluir seu cadastro?</h2>
+            <p>Digite <b>"DELETAR"</b> para continuar</p>
+            
+            <input type="text" id="deletar">
+
+            <div class="botoes">
+
+                <button onclick="deletar()">confirmar</button>
+                <button onclick="cancelarDel()">Cancelar</button>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="fundo_grid">
+
+        <div class="linha" id="linha1">
+
+             <div class="esteira">
+
+                <img src="../acervo/assets/lua.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/bolo.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/lupa.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/aquarela.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/Pirulito.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/Mapa.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/livro.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/doces.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/pinceis.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/binoculos.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/Giz.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/brilhos.png" class="imagem-grid" alt="">
+
+                <img src="../acervo/assets/pinceis.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/doces.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/livro.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/brilhos.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/lua.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/binoculos.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/Mapa.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/Pirulito.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/aquarela.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/Giz.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/bolo.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/lupa.png" class="imagem-grid" alt="">
+
+            </div>
+
+            
+        </div>
+
+        <div class="linha" id="linha2">
+
+            
+            <div class="esteira">
+
+                <img src="../acervo/assets/pinceis.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/doces.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/livro.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/brilhos.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/lua.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/binoculos.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/Mapa.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/Pirulito.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/aquarela.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/Giz.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/bolo.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/lupa.png" class="imagem-grid" alt="">
+
+                <img src="../acervo/assets/Giz.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/Mapa.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/aquarela.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/livro.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/lupa.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/pinceis.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/doces.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/Pirulito.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/brilhos.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/bolo.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/binoculos.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/lua.png" class="imagem-grid" alt="">
+
+
+            </div>
+
+        </div>
+
+        <div class="linha" id="linha3">
+
+            
+            <div class="esteira">
+
+                <img src="../acervo/assets/Giz.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/Mapa.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/aquarela.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/livro.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/lupa.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/pinceis.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/doces.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/Pirulito.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/brilhos.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/bolo.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/binoculos.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/lua.png" class="imagem-grid" alt="">
+
+                <img src="../acervo/assets/livro.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/bolo.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/lupa.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/aquarela.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/Pirulito.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/Mapa.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/lua.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/doces.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/pinceis.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/binoculos.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/Giz.png" class="imagem-grid" alt="">
+                <img src="../acervo/assets/brilhos.png" class="imagem-grid" alt="">
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../scripts/usuario.js"></script>
+
+
+</body>
+</html>

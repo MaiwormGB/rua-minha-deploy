@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+@keyframes Deslizar {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top,
+  #354b40,
+  #507965,
+  #599678,
+  #68b68f);
+  display: flex;
+  justify-content: center;
+  color: #3f3b3b;
+  overflow: hidden;
+
+}
+
+::-webkit-scrollbar{
+
+  display: none;
+
+}
+
+.fundo_grid{
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+.linha{
+
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    height: 25%;
+
+}
+
+.esteira{
+
+    display: flex;
+    animation: Deslizar 120s linear infinite;
+
+}
+
+#linha2 .esteira{
+
+    flex-direction: row-reverse;
+    animation-direction: reverse;
+
+}
+
+.fundo_grid img{
+
+    width: 200px;
+    height: 200px;
+
+}
+
+#intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../acervo/backgrounds/portao_background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.5s ease;
+}
+
+#filtro{
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1001;
+  background-image: linear-gradient(to top, 
+  rgba(64, 187, 64, 0.75),
+  rgba(64, 187, 64, 0.25),
+  rgba(64, 187, 64, 0)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+
+}
+
+#instrucao{
+
+  font-size: 15pt;
+  font-family: 'Finger Paint';
+
+}
+
+.main{
+
+  background: linear-gradient(to bottom, 
+    #fcfcf4, 
+    #fcfcf4, 
+    #e8e8d2, 
+    #ddddc1 
+ 
+  );
+  height: 100%;
+  width: 800px;
+  margin: 30px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.titulo{
+  width: 100%;
+  height: 560px;
+  object-fit: initial;
+
+}
+
+.titulo img{
+
+  height: 720px;
+  width: 100%;
+  border-radius: 30px 30px 0px 0px;
+  position: relative;
+  z-index: 998;
+
+}
+
+.usuario{
+
+  background-color: #572929;
+  height: 200px;
+
+}
+
+.conta_atual{
+
+  z-index: 999;
+  padding: 0 10px 0 10px;
+  color: #fcfcf4;
+  font-size: 16pt;
+  cursor: pointer;
+
+}
+
+.foto_perfil{
+
+  background-color: #5d2c2c;
+  border-radius: 10px;
+
+}
+
+.conta_atual img{
+
+  width: 60px;
+  height: 60px;
+  filter: brightness(0) saturate(100%) invert(100%) 
+  sepia(76%) saturate(186%) hue-rotate(325deg) 
+  brightness(104%) contrast(98%);
+
+}
+
+.break1{
+
+  width: 90%;
+  height: 20px;
+  margin: 30px 0px 30px 0px;
+  border-radius: 8px;
+  background: linear-gradient(to right, 
+    red, 
+    orange, 
+    yellow, 
+    green, 
+    blue, 
+    indigo, 
+    violet
+  );
+
+
+}
+
+.break2{
+
+  width: 60%;
+  height: 10px;
+  margin: 30px 0px 30px 0px;
+  border-radius: 8px;
+  background: linear-gradient(to right, 
+    red, 
+    orange, 
+    yellow, 
+    green, 
+    blue, 
+    indigo, 
+    violet
+  );
+
+
+}
+
+.info{
+
+  width: 90%;
+  font-size: 15pt;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.nav{
+
+  width: 95%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+}
+
+.buttons{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 400px;
+
+}
+
+.container{
+
+  position: relative;
+  width: 200px;
+  height: 200px;
+
+}
+
+.botao{
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  
+
+}
+
+.botao img{
+
+  width: 120px;
+  height: 120px;
+
+}
+
+button{
+
+  font-size: 20pt;
+  margin: 20px ;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #8e5252;
+  color: #fcfcf4;
+
+
+}
+
+#contexto{
+
+  font-family: 'Finger Paint';
+
+}
+
+.usuario{
+
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.conta_atual{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+.textoBotao{
+
+  display: none;
+  font-size: 17pt;
+  border-bottom: #0ecf72 5px solid;
+
+}
