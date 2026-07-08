@@ -55,7 +55,7 @@ function existeUsuario(){
 
 function cadastro(){
 
-    window.location.href = "../front/pages/cadastro.html";
+    window.location.href = "./pages/cadastro.html";
 
 }
 
@@ -65,17 +65,17 @@ function paginaUsuario(){
 
         if (usuario.logado === true){
 
-            window.location.href = "../front/pages/usuario.html"
+            window.location.href = "./pages/usuario.html"
 
         }else{
 
-            window.location.href = "../front/pages/cadastro.html"
+            window.location.href = "./pages/cadastro.html"
 
         }
 
     }else{
 
-        window.location.href = "../front/pages/cadastro.html"
+        window.location.href = "./pages/cadastro.html"
         
     }
 
@@ -85,25 +85,25 @@ function paginaUsuario(){
 
 function vizinha(){
 
-    window.location.href = "../front/pages/vizinhanca.html"
+    window.location.href = "./pages/vizinhanca.html"
 
 }
 
 function sobre(){
 
-    window.location.href = "../front/pages/sobre.html"
+    window.location.href = "./pages/sobre.html"
 
 }
 
 function comentario(){
 
-    window.location.href = "../front/pages/comentarios.html"
+    window.location.href = "./pages/comentarios.html"
 
 }
 
 function novidades(){
 
-    window.location.href = "../front/pages/novidades.html"
+    window.location.href = "./pages/novidades.html"
 
 }
 
