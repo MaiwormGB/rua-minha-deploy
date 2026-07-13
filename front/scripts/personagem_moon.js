@@ -277,11 +277,11 @@ function voltarVizinha(){
 // Variaveis do player
 
 const imgs_animacao = [
-    "../acervo/personagens/moon/moon fala 2.png",
-    "../acervo/personagens/moon/moon fala 3.png"
+    "../acervo/personagens/moon/Moon fala 2.png",
+    "../acervo/personagens/moon/Moon fala 3.png"
 ];
 
-const img_padrao = "../acervo/personagens/moon/moon fala 1.png"
+const img_padrao = "../acervo/personagens/moon/Moon fala 1.png"
 
 const velocidade_animacao = 300;
 

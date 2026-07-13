@@ -274,11 +274,11 @@ function voltarVizinha(){
 // Variaveis do player
 
 const imgs_animacao = [
-    "../acervo/personagens/mia/mia fala 2.png",
-    "../acervo/personagens/mia/mia fala 3.png"
+    "../acervo/personagens/mia/Mia fala 2.png",
+    "../acervo/personagens/mia/Mia fala 3.png"
 ];
 
-const img_padrao = "../acervo/personagens/mia/mia fala 1.png"
+const img_padrao = "../acervo/personagens/mia/Mia fala 1.png"
 
 const velocidade_animacao = 300;
 
