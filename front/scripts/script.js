@@ -13,8 +13,19 @@ let valbtn = 0;
 document.addEventListener('DOMContentLoaded', function(){
 
     const nome = document.getElementById("nome");
+    const pronome = usuario.pronome;
 
-    nome.innerHTML = `Seja bem vindo: <b>${usuario.crianca}</b>!`;
+    if (pronome === "ela"){
+
+        nome.innerHTML = `Seja bem vinda: <b>${usuario.crianca}</b>!`;
+
+    }else if(pronome === "ele" || pronome === "nenhum"){
+
+        nome.innerHTML = `Seja bem vindo: <b>${usuario.crianca}</b>!`;
+
+    }
+
+
 
 });
 

@@ -8,6 +8,36 @@ if (dados && dados !== "undefined") {
 
 console.log(usuario);
 
+async function preencherAtividadesConcluidas() {
+
+    const resposta = await fetch("../dados/atividades.json");
+    const dados = await resposta.json();
+
+    const concluidas = JSON.parse(
+        localStorage.getItem("atividadesConcluidas")
+    ) || [];
+
+    const lista = document.getElementById("lista");
+    lista.innerHTML = "";
+
+    concluidas.forEach(id => {
+
+        const atividade = dados.atividades.find(atv => atv.id === id);
+
+        if (atividade) {
+
+            const div = document.createElement("div");
+            div.classList.add("atividadeConcluida");
+
+            div.textContent = atividade.titulo;
+
+            lista.appendChild(div);
+
+        }
+
+    });
+
+}
 
 function voltar(){
 
@@ -60,9 +90,9 @@ function salvar(){
     console.log(novosValores)
 
     if (novaIdade !== "") {
-        if(novaIdade < 3 || novaIdade > 18){
+        if(novaIdade < 3 || novaIdade > 99){
 
-        alert("Coloque uma idade valida (3 - 18)");
+        alert("Coloque uma idade valida (3 - 99)");
         return;
 
         }else{
@@ -112,6 +142,7 @@ function deletar(){
 
         alert("Cadastro excluido com sucesso!")
         localStorage.removeItem("usuario");
+        localStorage.removeItem("atividadesConcluidas");
         window.location.href = "../index.html"
 
     }
@@ -122,8 +153,9 @@ function deletar(){
 
 }
 
-addEventListener('DOMContentLoaded', () => {
+addEventListener('DOMContentLoaded', async () => {
 
     preencherUsuario()
+    await preencherAtividadesConcluidas();
 
 })

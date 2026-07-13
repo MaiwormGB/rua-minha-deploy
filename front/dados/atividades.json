@@ -1,0 +1,175 @@
+{
+    "atividades":[
+    {
+        "id": "moon_chapeuzinho",
+        "titulo": "Chapeuzinho Vermelho",
+        "personagem": "Moon",
+        "texto": [
+        "Oi, amiguinho... Eu estava tirando uma soneca e tive um sonho com uma menina de capa vermelha caminhando por uma floresta.",
+        "Mas quando acordei, percebi que não consigo me lembrar de toda a história!",
+        "Será que você pode me ajudar? Leia a história da Chapeuzinho Vermelho com bastante atenção para descobrir tudo o que aconteceu nessa aventura.",
+        "Sua missão é:",
+        "• Conhecer os personagens da história;",
+        "• Descobrir onde a aventura acontece;",
+        "• Identificar o principal problema enfrentado pela Chapeuzinho;",
+        "• Escolher sua parte favorita da história.",
+        "Tenho certeza de que, com sua ajuda, vou conseguir lembrar de todos os detalhes e ficar bem acordada para ouvir você contar sobre essa aventura!"
+        ],
+        "audio": "../audios/atividades/Atividade-Moon.mp3"
+    },
+
+    {
+        "id": "moon_laco_de_fita",
+        "titulo": "Menina bonita do Laço de fita",
+        "personagem": "Moon",
+        "texto": [
+        "Oi, amiguinho... Eu acordei há pouco tempo e encontrei um laço de fita bem bonito no meu sonho. Fiquei curiosa para saber de quem ele era e qual história ele tinha para contar!",
+        "Por isso, preciso da sua ajuda. Leia o livro Menina Bonita do Laço de Fita com atenção e descubra o que torna essa história tão especial.",
+        "Sua missão é:",
+        "• Descobrir quem é a menina bonita;",
+        "• Conhecer o coelhinho da história;",
+        "• Prestar atenção nas perguntas que ele faz;",
+        "• Entender o que podemos aprender com a leitura.",
+        "Quando terminar, conte o que mais chamou sua atenção. Tenho certeza de que você vai descobrir coisas muito interessantes!"
+        ],
+        "audio": "../audios/atividades/atividade-Moon-2.mp3"
+    },
+
+    {
+        "id": "kiki_frutas",
+        "titulo": "Pintura de frutas",
+        "personagem": "Kiki",
+        "texto": [
+        "Hmmm… nada como comer uma fruta pela manhã, não é mesmo, amigo? Falando em frutas, eu adoro as cores delas! As combinações de sabores e cores, seus formatos variados, seus nomes! Qual é a sua favorita? …….. Eu também amo essa!",
+        "Eu adoro tanto as frutas que poderia até mesmo pintá-las... Tive uma ideia! Por que você não me ajuda?",
+        "Tenho aqui alguns desenhos de frutas de que gosto. Você poderia desenhá-las em uma folha A4 e colori-las com suas cores? É que não consigo me lembrar de todas!",
+        "Assim poderemos convencer a Mel a fazer algum doce de frutas depois!",
+        "Você poderia me ajudar nessa atividade?"
+        ],
+        "audio": "../audios/atividades/atividade-da-Kiki-.mp3"
+    },
+
+    {
+        "id": "mia_museu",
+        "titulo": "O Mistério do Caderno de Aventuras da Mia",
+        "personagem": "Mia",
+        "texto": [
+        "Olá, explorador! Hoje eu e a Lola viemos visitar um dos lugares mais incríveis de Petrópolis: o Museu Imperial! Eu estava super animada para registrar tudo no meu Caderno de Aventuras. Afinal, esse lugar guarda histórias de mais de cem anos atrás! Imagine só: imperadores, princesas, salões elegantes, objetos antigos e segredos que atravessaram gerações.",
+        "Mas aconteceu uma coisa muito estranha...",
+        "Enquanto eu organizava minhas anotações, algumas páginas do meu caderno desapareceram! Agora não consigo me lembrar de todos os detalhes que encontrei durante a visita.",
+        "Será que você pode me ajudar a completar as páginas perdidas? Durante o passeio, procure por:",
+        "★ Um objeto que pareça ter pertencido a um imperador ou imperatriz.",
+        "★ Um retrato de alguém que viveu há muito tempo.",
+        "★ Um objeto antigo que chamou a sua atenção.",
+        "★ Um móvel que você gostaria de ter em sua casa.",
+        "★ Um cantinho dos jardins que parece saído de uma história.",
+        "★ Um detalhe curioso que outras pessoas talvez nem tenham percebido.",
+        "Quando terminar a missão, escolha a descoberta que mais gostou e faça um desenho em uma folha. Você também pode escrever ou contar para sua família por que ela foi tão especial.",
+        "A Lola já escolheu a descoberta favorita dela (mas ela só responde com latidos). E você, qual será a sua?",
+        "Com a sua ajuda, vamos completar mais uma página do nosso Caderno de Aventuras e descobrir juntos os segredos do Museu Imperial!",
+        "Boa sorte, explorador! A aventura está apenas começando!"
+        ],
+        "audio": "../audios/atividades/Atividade-Mia.mp3"
+    },
+
+    {
+        "id": "mia_quitandinha",
+        "titulo": "O Mistério no Castelo do Quitandinha",
+        "personagem": "Mia",
+        "texto": [
+        "Olá, explorador! Hoje eu e a Lola viemos visitar um lugar muito especial: o Palácio Quitandinha! Quando chegamos, Lola ficou olhando para o prédio e fez uma pergunta: \"Mia, isso é um palácio ou um castelo?!\"",
+        "Eu também fiquei na dúvida! Com suas torres, janelas enormes e jardins encantadores, o Quitandinha parece ter saído diretamente de uma história de reis, rainhas e cavaleiros.",
+        "Mas aconteceu uma coisa estranha...",
+        "Enquanto olhávamos o castelo, encontramos uma carta antiga que dizia que apenas os verdadeiros exploradores conseguem descobrir seus segredos. Será que você pode nos ajudar?",
+        "Missão dos Exploradores:",
+        "★ A parte do prédio que mais parece um castelo.",
+        "★ Uma janela ou detalhe da construção que chamou sua atenção.",
+        "★ Um lugar bonito nos jardins ou perto do lago e tire uma foto bem bonita.",
+        "★ Um animal que você viu na área do Quitandinha.",
+        "★ Um detalhe que você acha que outras pessoas podem não ter percebido.",
+        "★ O lugar perfeito para uma foto em família.",
+        "Desafio da Mia:",
+        "★ Se você morasse nesse castelo por um dia, o que faria?",
+        "★ Você exploraria corredores secretos?",
+        "★ Faria um grande baile?",
+        "★ Ou convidaria seus amigos para uma aventura?",
+        "Missão Extra da Lola:",
+        "Quando chegar em casa, desenhe a parte do Quitandinha que você mais gostou ou crie o seu próprio castelo mágico inspirado no passeio.",
+        "A Lola já decidiu que, se morasse lá, transformaria um dos quartos em uma enorme sala cheia de comidinhas para cachorros! E você, como seria o seu castelo?",
+        "Boa sorte, explorador! Os segredos do Quitandinha estão esperando para serem descobertos!"
+        ],
+        "audio": "../audios/atividades/Atividade-Mia-2.mp3"
+    },
+
+    {
+    "id": "mel_red_velvet",
+    "titulo": "Bolo Red Velvet",
+    "personagem": "Mel",
+    "texto": [
+        "Oi, amiguinho! Eu sou a Mel e hoje vou te levar para uma aventura super gostosa na cozinha! Você já ouviu falar do bolo Red Velvet? Ele é um bolo vermelho bem bonito, macio como uma nuvem e com um sabor que parece um abraço doce!",
+        "Pegue seu avental, lave as mãozinhas, chame um responsável para te ajudar e venha comigo descobrir como preparar essa delícia. Vamos misturar ingredientes, espalhar alegria e criar um bolo digno de um reino encantado!",
+        "Pronto para começar?... Então vamos lá!",
+        "Para essa receita magnífica precisaremos de:",
+        "Para a massa:",
+        "• 2 ovos",
+        "• 100 g de manteiga sem sal amolecida",
+        "• 1 colher (sopa) de vinagre branco",
+        "• 1 colher (chá) de essência de baunilha",
+        "• 4 colheres de corante alimentício líquido vermelho",
+        "• 5 colheres (sopa) de suco de limão",
+        "• 3 xícaras (chá) de farinha de trigo",
+        "• 2 xícaras (chá) de açúcar refinado",
+        "• 1 colher (sopa) de cacau em pó (não pode ser achocolatado)",
+        "• 1 colher (chá) de sal",
+        "• 1 colher (sopa) de bicarbonato de sódio",
+        "• 1 colher (sopa) de fermento em pó",
+        "• 200 ml de leite integral",
+        "• 1 colher (sopa) de suco de limão",
+        "Para a cobertura e recheio:",
+        "• 100 g de manteiga sem sal amolecida",
+        "• 300 g de cream cheese",
+        "• 200 g de chocolate branco derretido",
+        "• 300 g de açúcar (de preferência açúcar de confeiteiro)",
+        "• 1 colher (sopa) de essência de baunilha",
+        "Modo de preparo - Massa:",
+        "Misture 200 ml de leite com 1 colher (sopa) de suco de limão e deixe descansar por 10 minutos.",
+        "Em outra tigela, misture a farinha de trigo, o açúcar, o cacau em pó, o sal, o bicarbonato e o fermento.",
+        "Na batedeira, bata a manteiga, os ovos, o vinagre, a baunilha, o corante vermelho e as 5 colheres de suco de limão por aproximadamente 10 minutos.",
+        "Adicione alternadamente a mistura seca e o leite com limão, batendo por mais 5 minutos até obter uma massa cremosa.",
+        "Divida a massa em duas formas redondas de 20 cm untadas e asse em forno preaquecido a 180°C por 20 a 40 minutos.",
+        "Faça o teste do palito. Se sair limpo, retire do forno, deixe esfriar e desenforme.",
+        "Modo de preparo - Recheio e cobertura:",
+        "Bata a manteiga, o cream cheese, o chocolate branco derretido, o açúcar de confeiteiro e a baunilha por cerca de 10 minutos, até obter um creme leve e fofo.",
+        "Montagem:",
+        "Corte os bolos ao meio, formando quatro camadas.",
+        "Recheie cada camada e cubra todo o bolo com o restante do creme.",
+        "Decore com frutas vermelhas, nozes ou confeitos de sua preferência.",
+        "Sirva imediatamente ou leve à geladeira por 10 minutos antes de servir.",
+        "Agora você pode se deliciar com esse saboroso bolo vermelho! Espero que goste e não esqueça de dar seu feedback sobre a receita. Beijinhos da Mel!"
+    ],
+    "audio": "../audios/atividades/Atividade-Mel.mp3"
+    },
+
+    {
+    "id": "milo_computador",
+    "titulo": "Conhecendo as partes do computador",
+    "personagem": "Milo",
+    "texto": [
+        "Olá, amiguinho! Eu tô com um problema e preciso da sua ajuda!",
+        "Quando saio do meu livro para visitar a Ruazinha, gosto muito de sempre aprender coisas novas e divertidas! Desta vez, encontrei um computador!",
+        "A Manu ficou curiosa para saber como ele funciona, então prometi voltar ao livro e contar tudinho para ela. O problema é que ainda não conheço muito bem cada uma das partes dele.",
+        "Será que você pode me ensinar? Observe tudo com bastante atenção e mostre como um verdadeiro explorador da informática faz!",
+        "Sua missão é:",
+        "★ Identificar cada uma das partes do computador.",
+        "★ Descobrir qual delas usamos para escrever letras, palavras e números.",
+        "★ Encontrar qual delas movimenta a setinha pela tela.",
+        "★ Descobrir em qual parte aparecem as imagens, os jogos e os desenhos.",
+        "★ Depois de terminar, confira com seu responsável se conseguiu reconhecer todas as partes corretamente.",
+        "Tenho certeza de que, com a sua ajuda, vou voltar para o meu livro sabendo muito mais sobre computadores!"
+    ],
+    "audio": "../audios/atividades/atividade-milo-partes-computador.mp3"
+}
+
+
+]
+}

@@ -29,21 +29,8 @@
 
       
 
-            <div class="lista">
+            <div id="lista">
 
-                <div class="comentario">
-
-                    <h3 id="cmTitulo">[TITULO]</h3>
-
-                    <p id="cmAtividade">• [ATIVIDADE]</p>
-
-                    <p id="cmTexto">[TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
-                        TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
-                        TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
-                        TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO]</p>
-
-
-                </div>
 
             </div>
 
@@ -65,13 +52,13 @@
                 
                 <select name="atividade" id="atividade">
 
-                    <option value="na" selected >Não especifica</option>
+                    <option value="Não especifica" selected >Não especifica</option>    
 
                 </select>
 
                 <textarea name="descricao" id="descricao" placeholder="Compartilhe seus pensamentos conosco"></textarea>
 
-                <button>enviar</button>
+                <button onclick="enviarComentario()">enviar</button>
 
             </div>
 
@@ -88,6 +75,7 @@
       
     </div>
 
+    <script src="../scripts/comentario.js"></script>
 
 </body>
 </html>

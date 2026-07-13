@@ -197,7 +197,7 @@ h1{
 
 }
 
-.lista{
+#lista{
 
     width: 700px;
     height: 80%;
@@ -213,13 +213,13 @@ h1{
 
 }
 
-.lista::-webkit-scrollbar{
+#lista::-webkit-scrollbar{
 
     display: none;
 
 }
 
-.lista h1{
+#lista h1{
 
     font-size: 32pt;
 
@@ -233,6 +233,15 @@ h1{
     background-color: var(--cor_principal);
     border-bottom: 5px solid var(--cor_secundaria);
     border-radius: 20px;
+    background-image: linear-gradient(to top,
+    var(--background1),
+    var(--background2),
+    var(--background3));
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
 
 }
@@ -246,13 +255,16 @@ h1{
 
 }
 
-#resumo{
+.resumo{
 
     padding: 15px;
     color: var(--cor_secundaria);
     font-size: 17pt;
-    width: 100%;
-    height: 140px;
+    width: 90%;
+    height: 160px;
+    background-color: color-mix(in srgb, var(--background3) 70%, transparent);
+    border-radius: 20px;
+    white-space: pre-line;
 
 }
 
@@ -284,6 +296,198 @@ h1{
     font-size: 14pt;
     background-color: var(--cor_secundaria);
     border-radius: 10px;
+
+}
+
+
+.atividade_grande{
+
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-image:
+        linear-gradient(
+            to top,
+            var(--background1),
+            var(--background2),
+            var(--background3)
+        );
+
+    background-size: cover, cover, cover;
+
+
+}
+
+.atividade_grande .main{
+
+    background-image:
+    radial-gradient(
+        #0a0907d1,
+        #1a1612d9,
+        #40372ec0);
+    position: fixed;
+    height: 100%;
+
+}
+
+
+
+.conteudo{
+
+    width: 1250px;
+    height: 750px;
+    background-color: var(--cor_secundaria);
+    border-radius: 30px;
+    border: var(--cor_principal) double 30px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.atividade_grande .texto{
+
+    width: 95%;
+    height: 65%;
+    border-radius: 20px;
+    background-color: var(--background3);
+    border-bottom: var(--background2) solid 10px;
+    padding: 10px;
+    overflow-y: scroll;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.atividade_grande .texto::-webkit-scrollbar{
+
+    display: none;
+}
+
+.conteudo p{
+
+    text-align: justify;
+    width: 98%;
+
+}
+
+.atividade_grande .botoes{
+
+    height: 150px;
+    width: 95%;
+    padding: 10px;
+    align-items: center;
+
+}
+
+.conteudo button{
+
+    background-color: var(--background3);
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    border-bottom: var(--background2) solid 10px;
+
+}
+
+.conteudo button:hover{
+
+    border: none;
+    border-bottom: none;
+    background-color: var(--background2);
+
+}
+
+#confirmar_atividade{
+
+    background-color: #7fc285;
+    width: 700px;
+    height: 400px;
+    padding: 20px;
+    border: 20px double #47794b ;
+    border-radius: 30px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#confirmar_atividade h3{
+
+    font-size: 30pt;
+    color: #47794b;
+
+}
+
+#confirmar_atividade p{
+
+    font-size: 16pt;
+    text-align: center;
+    color: #28442b;
+
+}
+
+#confirmar_atividade .cancelar_conf{
+
+    background-color: #974444;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    border-bottom: #643c3c solid 10px;
+    color: #f7bcbc;
+
+}
+
+#confirmar_atividade .cancelar_conf:hover{
+
+    border: none;
+    border-bottom: none;
+    background-color:#643c3c;    
+
+}
+
+#confirmar_atividade .confirmar_btn{
+
+    background-color: #479744;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    border-bottom: #3c643e solid 10px;
+    color: #bcf7bf;
+
+}
+
+#confirmar_atividade .confirmar_btn:hover{
+
+    border: none;
+    border-bottom: none;
+    background-color:#3c643e;  
+
+}
+
+#confirmar_atividade input{
+
+    font-size: 15pt;
+    padding: 5px;
+    border: none;
+    border-bottom: #3c643e solid 3px;
+    background-color: transparent;
+    width: 300px;
+    text-align: center;
+    color: #243d21;
+
+}
+
+#confirmar_atividade input::placeholder{
+
+    color: #3c643e8c;
 
 }
 

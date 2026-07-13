@@ -1,25 +1,268 @@
-function atividade(){
+const dados = localStorage.getItem("usuario");
 
-    const personagems = document.getElementById("personagems");
-    const atividade = document.getElementById("atividade");
-    
+let usuario = null;
 
-    atividade.style.display = "flex";
-    personagems.style.display = "none";
+if (dados && dados !== "undefined") {
+    usuario = JSON.parse(dados);
+}
+
+console.log(usuario);
+
+async function carregarAtividades() {
+
+    const resposta = await fetch("../dados/atividades.json");
+
+    return await resposta.json();
+}
+
+let atividadeAtual = null;
+
+async function iniciar() {
+
+    const dados = await carregarAtividades();
+
+    const atividadesMoon = dados.atividades.filter(
+        atividade => atividade.personagem === "Mia"
+    );
+
+    console.log(atividadesMoon);
+
+    const lista = document.getElementById("lista");
+
+    atividadesMoon.forEach((atividade) => {
+
+        const novaAtividade = document.createElement("div");
+        const header = document.createElement("div");
+        const titulo = document.createElement("div");
+        const h2 = document.createElement("h2");
+        const resumo = document.createElement("p");
+
+        const textoCompleto = atividade.texto.join("\n\n");
+
+        h2.textContent = atividade.titulo;
+        
+        const limite = 200;
+
+        let resumoTexto = textoCompleto;
+
+        if (textoCompleto.length > limite) {
+
+            resumoTexto = textoCompleto.slice(0, limite);
+
+            resumoTexto = resumoTexto.slice(
+                0,
+                resumoTexto.lastIndexOf(" ")
+        );
+
+            resumoTexto += " [...]";
+
+        }
+
+        resumo.textContent = resumoTexto;
+
+
+        novaAtividade.classList.add("atv");
+        header.classList.add("header");
+        titulo.classList.add("titulo");
+        resumo.classList.add("resumo");
+
+        lista.appendChild(novaAtividade);
+        novaAtividade.appendChild(header);
+        novaAtividade.appendChild(titulo);
+        titulo.appendChild(h2);
+        novaAtividade.appendChild(resumo);
+
+
+        novaAtividade.addEventListener("click", () => {
+
+            mudarAtividadeGrande(atividade);
+
+        });
+
+
+        });
 
 }
 
-function personagems(){
+iniciar();
 
-    const personagems = document.getElementById("personagems");
-    const atividade = document.getElementById("atividade");
-    
+function preencherAtividadeGrande(atividade){
 
-    atividade.style.display = "none";
-    personagems.style.display = "flex";
+    atividadeAtual = atividade;
+
+    const titulo = document.getElementById("tituloAtvGrande");
+    const texto = document.querySelector("#atividade_grande .texto");
+    const audio = document.getElementById("audioAtvGrande");
+
+    titulo.textContent = atividade.titulo;
+
+    audio.src = atividade.audio;
+
+    texto.innerHTML = "";
+
+    atividade.texto.forEach(paragrafo => {
+
+        const p = document.createElement("p");
+
+        p.textContent = paragrafo;
+
+        texto.appendChild(p);
+
+    });
 
 }
 
+function concluirAtividade(id){
+
+    let concluidas = JSON.parse(
+        localStorage.getItem("atividadesConcluidas")
+    ) || [];
+
+
+    if(!concluidas.includes(id)){
+
+        concluidas.push(id);
+
+        localStorage.setItem(
+            "atividadesConcluidas",
+            JSON.stringify(concluidas)
+        );
+
+    }
+
+}
+
+function atividadeConcluida(id){
+
+    const concluidas = JSON.parse(
+        localStorage.getItem("atividadesConcluidas")
+    ) || [];
+
+    return concluidas.includes(id);
+
+}
+
+let tentativas = 0;
+
+
+
+function confirmarAtividade(){
+
+    const concluir = document.getElementById("senha_conf").value;
+
+    if (concluir === usuario.senhaAdm){
+
+        alert("Atividade concluida! Você pode ver a lista das atividades concluidas no seu perfil.")
+   
+        concluirAtividade(atividadeAtual.id);
+        
+        mudarPersonagems()
+
+    }else if(concluir === ""){
+
+        alert("Preencha o campo destacado com sua senha de atividades")
+        return;
+
+    }else if(concluir !== usuario.senhaAdm && tentativas == 5){
+
+        alert("Muitas tentativas detectadas. Espere alguns minutos para tentar novamente")
+        return;
+
+    }else if(concluir !== usuario.senhaAdm){
+
+        alert("Senha incorreta")
+        tentativas ++;
+        console.log(tentativas);
+        return(tentativas);
+
+    }else{
+
+        alert("Um erro ocorreu")
+        return;
+
+    }
+
+
+
+}
+
+function mudarAtividade(){
+
+    const mudarPersonagems = document.getElementById("personagems");
+    const mudarAtividade = document.getElementById("atividade");
+    const mudarAtividade_grande = document.getElementById("atividade_grande");
+    
+
+    mudarAtividade.style.display = "flex";
+    mudarPersonagems.style.display = "none";
+    mudarAtividade_grande.style.display = "none";
+
+}
+
+function mudarPersonagems(){
+
+    const mudarPersonagems = document.getElementById("personagems");
+    const mudarAtividade = document.getElementById("atividade");
+    const mudarAtividade_grande = document.getElementById("atividade_grande");
+    
+
+    mudarAtividade.style.display = "none";
+    mudarPersonagems.style.display = "flex";
+    mudarAtividade_grande.style.display = "none";
+
+}
+
+function mudarAtividadeGrande(atividade){
+
+     if (atividadeConcluida(atividade.id)) {
+
+        alert("Essa atividade já foi concluída!");
+
+        return;
+    }
+
+    const mudarPersonagems = document.getElementById("personagems");
+    const mudarAtividade = document.getElementById("atividade");
+    const mudarAtividade_grande = document.getElementById("atividade_grande");
+    const mudarConteudo = document.getElementById("conteudo");
+    const mudarConfirmarAtividade =document.getElementById("confirmar_atividade");
+    const inputConf = document.getElementById("senha_conf");
+
+    inputConf.value = "";
+
+
+    mudarConteudo.style.display = "flex";
+    mudarConfirmarAtividade.style.display = "none";
+    mudarAtividade.style.display = "none";
+    mudarPersonagems.style.display = "none";
+    mudarAtividade_grande.style.display = "flex";
+
+    preencherAtividadeGrande(atividade);
+
+}
+
+function mudarConfirmarAtividade(){
+
+    const mudarConteudo = document.getElementById("conteudo");
+    const mudarConfirmarAtividade =document.getElementById("confirmar_atividade")
+
+    mudarConteudo.style.display = "none";
+    mudarConfirmarAtividade.style.display = "flex";
+
+}
+
+function cancelarConfirmarAtividade(){
+
+    const mudarConteudo = document.getElementById("conteudo");
+    const mudarConfirmarAtividade =document.getElementById("confirmar_atividade")
+    const inputConf = document.getElementById("senha_conf");
+
+    inputConf.value = "";
+
+    mudarConteudo.style.display = "flex";
+    mudarConfirmarAtividade.style.display = "none";
+
+}
 function voltarVizinha(){
 
     window.location.href ="../pages/vizinhanca.html"

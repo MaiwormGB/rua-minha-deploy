@@ -45,6 +45,7 @@ function logar(){
         alert("Login efetuado")
         usuario.logado = true;
         localStorage.setItem("usuario", JSON.stringify(usuario));
+        window.location.href = "../index.html"
         
     }else{
 
@@ -93,9 +94,9 @@ function cadastrar(){
     alert("Preencha todos os campos.");
     return;
 
-    }else if(novaIdade < 3 || novaIdade > 18){
+    }else if(novaIdade < 3 || novaIdade > 99){
 
-    alert("Coloque uma idade valida (3 - 18)");
+    alert("Coloque uma idade valida (3 - 99)");
     return;
 
     }
