@@ -130,7 +130,6 @@ button:hover{
     display: flex;
     flex-direction: column;
     width: 920px;
-    height: 800px;
     background: linear-gradient(to bottom, 
     #fcfcf4, 
     #fcfcf4, 
@@ -174,6 +173,28 @@ button:hover{
 
 }
 
+.atividades{
+
+    border-bottom: 10px solid #422626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+}
+
+#lista{
+
+    width: 100%;
+    min-height: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+}
+
 h3{
 
     font-size: 18pt;
@@ -193,6 +214,16 @@ input{
     border: none;
     border-bottom: #794747 solid 2px;
     background-color: transparent;
+
+}
+
+.atividadeConcluida{
+
+    padding: 8px;
+    background-color: #794747;
+    border-radius: 10px;
+    color: #ddddc1;
+    border-bottom: #422626 solid 3px;
 
 }
 

@@ -70,7 +70,7 @@
             
                     </div>
 
-                    <button onclick="atividade()">Atividades</button>
+                    <button onclick="mudarAtividade()">Atividades</button>
 
                 </div>
 
@@ -102,47 +102,15 @@
 
         <div class="main">
 
-            <div class="lista">
+            <div id="lista">
 
                 <div class="titulo">
                 
                     <h1>Atividades</h1>
                     
-                    <button onclick="personagems()">Voltar</button>
+                    <button onclick="mudarPersonagems()">Voltar</button>
 
                 </div>
-
-                <div class="atv">
-
-                    <div class="header"></div>
-
-                    <div class="titulo">
-
-                        <h2>[Titulo]</h2>
-
-                    </div>
-
-                    <p id="resumo">[Resumo de uma atividade]</p>
-
-
-                </div>
-
-                <div class="atv">
-
-                    <div class="header"></div>
-
-                    <div class="titulo">
-
-                        <h2>[Titulo]</h2>
-
-                    </div>
-
-                    <p id="resumo">[Resumo de uma atividade]</p>
-
-
-                </div>
-
-                
 
             </div>
 
@@ -158,8 +126,88 @@
 
         </div>
 
+        </div>
 
     </div>
+
+    <div id="atividade_grande" class="atividade_grande">
+
+        <div class="header">
+
+        </div>
+
+        
+            <div class="main">
+
+
+                <div class="conteudo" id="conteudo">
+
+
+                    <div class="titulo">
+
+                        <h1 id="tituloAtvGrande">[Titulo]</h1>
+
+                    </div>
+
+                    <div class="texto">
+
+
+                    </div>
+
+                    <div class="botoes">
+
+                        <button onclick="mudarAtividade()">Voltar</button>
+                        
+                        <div class="player">
+            
+                        <audio id="audioAtvGrande" class="audioPlayer" src=""></audio>
+
+                        <div class="playBtn">
+              
+                            <img src="../acervo/personagens/kiki/Kiki fala 1.png" width="130%" height="150%" class="imagemPlayBtn" alt="">
+            
+                        </div>
+
+                        <input type="range" class="barrinha" value="0">
+            
+                        </div>
+
+                        <button class="concluir" onclick="mudarConfirmarAtividade()" >Concluir</button>
+
+                        </div>
+                
+                </div>
+
+                <div id="confirmar_atividade">
+
+                    <div class="titulo">
+
+                        <h3>Concluir atividade?</h3>
+
+                    </div>
+
+                    <p>
+                        Caso a atividade já tenha sido concluida na vida real, 
+                        aperte em <strong>confirmar</strong> e digite sua <strong>Senha de atividades</strong>
+                        para concluir a atvididade
+                    </p>
+
+                    <input type="text" placeholder="Senha de atividades" id="senha_conf" >
+
+                    <div class="botoes">
+
+                        <button class="cancelar_conf" onclick="cancelarConfirmarAtividade()">cancelar</button>
+
+                        <button class="confirmar_btn" id="confirmar_btn" onclick="confirmarAtividade()">Confirmar</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+    </div>    
 
     <script src="../scripts/personagem_kiki.js"></script>
 
